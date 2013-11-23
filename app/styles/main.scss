@@ -5,6 +5,10 @@ $light-font: 'Trade Gothic W01 Light', Sans-serif;
 $regular-font: 'Trade Gothic W01 Roman', Sans-serif;
 $bold-font: 'Trade Gothic W01 Bold', Sans-serif;
 $font-size-base: 16px;
+$border-radius-base: 15px;
+$pink: #ec2d83;
+$blue: #00bbe2;
+$grey: #7f8080;
 
 /* Import Bootstrap
 ---------------------------------------- */
@@ -35,7 +39,7 @@ $font-size-base: 16px;
 ---------------------------------------- */
 body {
   font-family: $regular-font;
-  color: #7f8080;
+  color: $grey;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: $bold-font;
@@ -43,7 +47,33 @@ h1, h2, h3, h4, h5, h6 {
 .light {
 	font-family: $light-font;
 }
-
+a {
+	color: #00bbe2;
+}
+/* Buttons
+---------------------------------------- */
+.btn {
+	text-transform: uppercase;
+	font-family: $bold-font;
+	font-size: 1.5em;
+	color: #FFF;
+}
+.btn-pink {
+	background: $pink;
+	border: none;
+	&:hover {
+		color: #FFF;
+		background: darken($pink, 10%);
+	}
+}
+.btn-blue {
+	background: $blue;
+	border: none;
+	&:hover {
+		color: #FFF;
+		background: darken($blue, 10%);
+	}
+}
 /* Header
 ---------------------------------------- */
 .header {
@@ -72,7 +102,7 @@ h1, h2, h3, h4, h5, h6 {
 		}
 	}
 	.callout {
-		background: #ec2d83;
+		background: $pink;
 		h2 {
 			color: #FFF;
 			text-transform: uppercase;
@@ -85,6 +115,9 @@ h1, h2, h3, h4, h5, h6 {
 ---------------------------------------- */
 .module {
 	background: #FFF;
+	h2 {
+		text-transform: uppercase;
+	}
 }
 
 /* Module One
@@ -96,11 +129,63 @@ h1, h2, h3, h4, h5, h6 {
 /* Module Two
 ---------------------------------------- */
 .module-two {
-	.col-md-6 {
+	.col-sm-6 {
 		padding-left: 0px;
 		padding-right: 0px;
 	}
 	img {
 		width: 100%;
+	}
+	.btn {
+		margin: 2.0em 0;
+	}
+}
+/* Module Three
+---------------------------------------- */
+.module-three {
+	padding: 2.5em 0;
+	border-top: 1px solid;
+	border-color: $grey;
+	border-bottom: 1px solid;
+	h2, h3{
+		margin: 0;
+	}
+}
+/* Module Four
+---------------------------------------- */
+.module-four {
+	padding: 4.0em 0;
+	.description {
+		padding: 2.0em 0;
+		.blue {
+			color: $blue;
+			text-align: left;
+		}
+		.pink {
+			color: $pink;
+			text-align: left;
+		}
+	}
+}
+/* Module Four
+---------------------------------------- */
+.module-five {
+	padding: 4.0em 0;
+	border-top: 1px solid;
+	border-color: $grey;
+}
+
+.module-six {
+	background: #a7def1;
+	color: #fff;
+	padding: 4.0em;
+	h3 {
+		font-size: 1.5em;
+		text-transform: uppercase;
+		line-height: 1.75em;
+	}
+	p {
+		font-size: .85em;
+		color: $grey;
 	}
 }
