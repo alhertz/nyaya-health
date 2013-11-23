@@ -1,9 +1,9 @@
 /* Change some variables before import
 ---------------------------------------- */
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
-$light-font: 'Trade Gothic W01 Light';
-$regular-font: 'Trade Gothic W01 Roman';
-$bold-font: 'Trade Gothic W01 Bold';
+$light-font: 'Trade Gothic W01 Light', Sans-serif;
+$regular-font: 'Trade Gothic W01 Roman', Sans-serif;
+$bold-font: 'Trade Gothic W01 Bold', Sans-serif;
 $font-size-base: 16px;
 
 /* Import Bootstrap
@@ -35,6 +35,7 @@ $font-size-base: 16px;
 ---------------------------------------- */
 body {
   font-family: $regular-font;
+  color: #7f8080;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: $bold-font;
@@ -56,6 +57,19 @@ h1, h2, h3, h4, h5, h6 {
 		vertical-align: middle;
 		margin: 0;
 		width: 100%;
+		text-align: center;
+		.description {
+			width: 500px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -200px;
+			margin-left: -250px;
+			h3 {
+				color: #FFF;
+				font-size: 1.5em;
+			}
+		}
 	}
 	.callout {
 		background: #ec2d83;
@@ -64,5 +78,29 @@ h1, h2, h3, h4, h5, h6 {
 			text-transform: uppercase;
 			font-size: 7.0em;
 		}
+	}
+}
+
+/* All Modules
+---------------------------------------- */
+.module {
+	background: #FFF;
+}
+
+/* Module One
+---------------------------------------- */
+.module-one {
+	padding: 4.0em 0;
+}
+
+/* Module Two
+---------------------------------------- */
+.module-two {
+	.col-md-6 {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	img {
+		width: 100%;
 	}
 }
