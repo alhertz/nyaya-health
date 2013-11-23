@@ -1,18 +1,68 @@
+/* Change some variables before import
+---------------------------------------- */
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+$light-font: 'Trade Gothic W01 Light';
+$regular-font: 'Trade Gothic W01 Roman';
+$bold-font: 'Trade Gothic W01 Bold';
+$font-size-base: 16px;
 
+/* Import Bootstrap
+---------------------------------------- */
 @import 'sass-bootstrap/lib/bootstrap';
+// font-family:'TradeGothicW01-LightObl';
+// font-family:'Trade Gothic W01 Roman';
+// font-family:'Trade Gothic W01 Obl';
+// font-family:'Trade Gothic W01 Bold';
+// font-family:'TradeGothicW01-BoldObl';
+// font-family:'Trade Gothic W01 Bold 2';
+// font-family:'TradeGothicW01-Bold2Obl';
+// font-family:'Trade Gothic W01 Cn 18';
+// font-family:'TradeGothicW01-Cn18Obl';
+// font-family:'TradeGothicW01-BoldCn20 675334';
+// font-family:'TradeGothicW01-BoldCn20 675337';
+// font-family:'TradeGothicW01-Extended';
+// font-family:'TradeGothicW01-BoldExte';
 
+/* Misc Helper Classes
+---------------------------------------- */
 .browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
 }
-
-/* Space out content a bit */
+/* Typography
+---------------------------------------- */
 body {
-    padding-top: 20px;
-    padding-bottom: 20px;
+  font-family: $regular-font;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: $bold-font;
+}
+.light {
+	font-family: $light-font;
 }
 
-
+/* Header
+---------------------------------------- */
+.header {
+	background: url('../images/header.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	.hero {
+	  display: table-cell;
+		vertical-align: middle;
+		margin: 0;
+		width: 100%;
+	}
+	.callout {
+		background: #ec2d83;
+		h2 {
+			color: #FFF;
+			text-transform: uppercase;
+			font-size: 7.0em;
+		}
+	}
+}
