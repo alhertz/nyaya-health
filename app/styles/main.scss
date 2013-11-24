@@ -56,6 +56,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 a {
 	color: #00bbe2;
+	&:hover {
+		text-decoration: none;
+	}
 }
 /* Buttons
 ---------------------------------------- */
@@ -128,6 +131,7 @@ a {
 ---------------------------------------- */
 .module {
 	background: #FFF;
+	padding: 4.0em 0;
 	h2 {
 		text-transform: uppercase;
 	}
@@ -142,6 +146,7 @@ a {
 /* Module Two
 ---------------------------------------- */
 .module-two {
+	padding: 0;
 	.col-sm-6 {
 		padding-left: 0px;
 		padding-right: 0px;
@@ -168,6 +173,17 @@ a {
 ---------------------------------------- */
 .module-four {
 	padding: 4.0em 0;
+	.col-sm-6 {
+		@media (min-width: $screen-md-min) {
+			&:first-child {
+				padding-right: 60px;
+				border-right: 1px solid $grey;
+			}
+			&:last-child {
+				padding-left: 60px;
+			} 
+		}
+	}
 	.description {
 		padding: 2.0em 0;
 		.blue {
@@ -180,7 +196,7 @@ a {
 		}
 	}
 }
-/* Module Four
+/* Module Five
 ---------------------------------------- */
 .module-five {
 	padding: 4.0em 0;
@@ -188,6 +204,8 @@ a {
 	border-color: $grey;
 }
 
+/* Module Six
+---------------------------------------- */
 .module-six {
 	background: #a7def1;
 	color: #fff;
@@ -204,6 +222,26 @@ a {
 	}
 }
 
+/* Module Seven
+---------------------------------------- */
+.module-seven {
+	border-bottom: 1px solid $grey;
+	padding: 4.0em 0 2.0em 0;
+	img {
+		max-width: 130px;
+	}
+	.sponsors {
+		margin: 4.0em 0;
+		a {
+			&:hover {
+				opacity: .8;
+			}
+		}
+	}
+}
+/* Footer
+---------------------------------------- */
+
 /* Media Queries
 ---------------------------------------- */
 /* Small devices (tablets, 768px and up) */
@@ -218,5 +256,5 @@ a {
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: $screen-lg-min) { 
-	
+
 }
