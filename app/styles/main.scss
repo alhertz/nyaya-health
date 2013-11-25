@@ -116,6 +116,13 @@ a {
 				font-size: 1.5em;
 			}
 		}
+		@media (max-width: $screen-sm-min) {
+			.description {
+				width: 300px;
+				margin-left: -150px;
+				height: 300px;
+			}		
+		}
 	}
 	.callout {
 		background: $pink;
@@ -123,6 +130,19 @@ a {
 			color: #FFF;
 			text-transform: uppercase;
 			font-size: 7.0em;
+		}
+		// Shrink for mobile phones
+		@media (max-width: $screen-md-min) {
+			h2 {
+				font-size: 5.0em;
+				margin-bottom: .25em;
+			}
+		}
+		@media (max-width: $screen-sm-min) {
+			h2 {
+				font-size: 2.0em;
+				margin-bottom: .5em;
+			}
 		}
 	}
 }
@@ -141,12 +161,19 @@ a {
 ---------------------------------------- */
 .module-one {
 	padding: 4.0em 0;
+	@media (max-width: $screen-sm-min) { 
+		padding: 2.0em 0;
+	}
 }
 
 /* Module Two
 ---------------------------------------- */
 .module-two {
 	padding: 0;
+	.row {
+		margin-left: 0;
+		margin-right: 0;
+	}
 	.col-sm-6 {
 		padding-left: 0px;
 		padding-right: 0px;
@@ -156,6 +183,22 @@ a {
 	}
 	.btn {
 		margin: 2.0em 0;
+	}
+	@media (max-width: $screen-sm-min) { 
+		padding: 0;
+		p {
+			margin: 0;
+		}
+		.btn {
+			display: block;
+			border-radius: 0;
+			margin: 0;
+		}
+		.description {
+			.pink, .blue {
+				text-align: center;
+			}
+		}
 	}
 }
 /* Module Three
@@ -173,17 +216,6 @@ a {
 ---------------------------------------- */
 .module-four {
 	padding: 4.0em 0;
-	.col-sm-6 {
-		@media (min-width: $screen-md-min) {
-			&:first-child {
-				padding-right: 60px;
-				border-right: 1px solid $grey;
-			}
-			&:last-child {
-				padding-left: 60px;
-			} 
-		}
-	}
 	.description {
 		padding: 2.0em 0;
 		.blue {
@@ -195,6 +227,17 @@ a {
 			text-align: left;
 		}
 	}
+	@media (max-width: $screen-sm-min) { 
+		padding: 2.0em 0;
+		.btn {
+			margin-bottom: 1.0em;
+		}
+		.description {
+			.pink, .blue {
+				text-align: center;
+			}
+		}
+	}
 }
 /* Module Five
 ---------------------------------------- */
@@ -202,6 +245,9 @@ a {
 	padding: 4.0em 0;
 	border-top: 1px solid;
 	border-color: $grey;
+	@media (max-width: $screen-sm-min) { 
+		text-align: center;
+	}
 }
 
 /* Module Six
@@ -209,7 +255,7 @@ a {
 .module-six {
 	background: #a7def1;
 	color: #fff;
-	padding: 4.0em;
+	padding: 4.0em 0;
 	h3 {
 		font-size: 1.5em;
 		text-transform: uppercase;
@@ -219,6 +265,19 @@ a {
 	p {
 		font-size: .85em;
 		color: $grey;
+	}
+	// Mobile Tweaks
+	@media (max-width: $screen-sm-min) { 
+		text-align: center;
+		h3 {
+			font-size: 1.0em;
+			line-height: 1.2em;
+		}
+ 		img { 
+ 			max-width: 100%;
+ 			height: auto;
+ 			margin: 1.0em 0;
+ 		}
 	}
 }
 
@@ -231,30 +290,23 @@ a {
 		max-width: 130px;
 	}
 	.sponsors {
-		margin: 4.0em 0;
+		margin: 4.0em 0 2.0em 0;
+		img {
+			margin-bottom: 2.0em;
+		}
 		a {
 			&:hover {
 				opacity: .8;
 			}
 		}
 	}
+	@media (max-width: $screen-sm-min) { 
+		.sponsors {
+			img {
+				max-width: 100%;
+			}
+		}
+	}
 }
 /* Footer
 ---------------------------------------- */
-
-/* Media Queries
----------------------------------------- */
-/* Small devices (tablets, 768px and up) */
-@media (min-width: $screen-sm-min) { 
- 
-}
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: $screen-md-min) { 
-
-}
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: $screen-lg-min) { 
-
-}
