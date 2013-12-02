@@ -92,7 +92,7 @@ a {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover; 
   .branding {
 		padding-top: 2.0em;
 		li a {
@@ -150,20 +150,30 @@ a {
 					font-size: 1.5em;
 				}
 			}
-		}
-		.state-two {
-			display: none;
-		}
-		@media (max-width: $screen-sm-min) {
+			@media (max-width: $screen-sm-min) {
 			.description {
 				width: 300px;
+				// display: none;
 				margin-left: -150px;
 				height: 300px;
 			}		
 		}
+		}
+		.state-two {
+			display: none;
+		}
 	}
 	.hero.playing {
 		display: block;
+	}
+	@media (max-width: $screen-sm-min) {
+		.hero {
+			display: block;
+			min-height: 390px !Important;
+		}
+		.branding {
+			display: none;
+		}
 	}
 	.callout {
 		background: $pink;
@@ -277,7 +287,9 @@ a {
 	@media (max-width: $screen-sm-min) { 
 		padding: 2.0em 0;
 		.btn {
-			margin-bottom: 1.0em;
+			margin-bottom: 2.0em;
+			display: block;
+			margin: 0;
 		}
 		.description {
 			.pink, .blue {
