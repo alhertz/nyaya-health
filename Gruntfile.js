@@ -53,6 +53,7 @@ module.exports = function (grunt) {
                     base: [
                         '.tmp',
                         '<%= yeoman.app %>'
+                      
                     ]
                 }
             },
@@ -62,6 +63,7 @@ module.exports = function (grunt) {
                         '.tmp',
                         'test',
                         '<%= yeoman.app %>'
+                     
                     ]
                 }
             },
@@ -69,6 +71,7 @@ module.exports = function (grunt) {
                 options: {
                     open: true,
                     base: '<%= yeoman.dist %>'
+                   
                 }
             }
         },

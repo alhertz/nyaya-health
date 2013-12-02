@@ -67,6 +67,7 @@ a {
 	font-family: $bold-font;
 	font-size: 1.5em;
 	color: #FFF;
+	padding: 30px 42px;
 }
 .btn-pink {
 	background: $pink;
@@ -207,7 +208,7 @@ a {
 	padding: 2.5em 0;
 	border-top: 1px solid;
 	border-color: $grey;
-	border-bottom: 1px solid;
+	border-bottom: 0px solid;
 	h2, h3{
 		margin: 0;
 	}
@@ -216,6 +217,11 @@ a {
 ---------------------------------------- */
 .module-four {
 	padding: 4.0em 0;
+		.col-sm-6 {
+	
+		border-right: 1px solid;
+		border-color: $grey;
+	}
 	.description {
 		padding: 2.0em 0;
 		.blue {
@@ -226,6 +232,7 @@ a {
 			color: $pink;
 			text-align: left;
 		}
+	
 	}
 	@media (max-width: $screen-sm-min) { 
 		padding: 2.0em 0;
