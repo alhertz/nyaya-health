@@ -95,7 +95,7 @@ a {
   background-size: cover;
   .branding {
 		padding-top: 2.0em;
-		a {
+		li a {
 			color: #FFF;
 			&:hover {
 				background: transparent !important;
@@ -109,29 +109,50 @@ a {
 			font-size: 1.5em;
 		}
 	}
+	.close {
+		display: none;
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 2.0em 10px 10px 10px;
+		margin: 0 2.0em 2.0em 2.0em;
+		opacity: 1.0;
+		background: $pink;
+		color: #FFF;
+		&:hover {
+			background: darken($pink, 10%);
+			color: #FFF;
+			opacity: 1.0;
+		}
+	}
 	.hero {
 	  display: table-cell;
 		vertical-align: middle;
 		margin: 0;
 		width: 100%;
 		text-align: center;
-		.description {
-			width: 500px;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			margin-top: -200px;
-			margin-left: -250px;
-			a {
-				opacity: 1.0;
-				&:hover {
-					opacity: .5;
+		.state-one {
+			.description {
+				width: 500px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-top: -200px;
+				margin-left: -250px;
+				a {
+					opacity: 1.0;
+					&:hover {
+						opacity: .5;
+					}
+				}
+				h3 {
+					color: #FFF;
+					font-size: 1.5em;
 				}
 			}
-			h3 {
-				color: #FFF;
-				font-size: 1.5em;
-			}
+		}
+		.state-two {
+			display: none;
 		}
 		@media (max-width: $screen-sm-min) {
 			.description {
@@ -140,6 +161,9 @@ a {
 				height: 300px;
 			}		
 		}
+	}
+	.hero.playing {
+		display: block;
 	}
 	.callout {
 		background: $pink;
@@ -163,7 +187,6 @@ a {
 		}
 	}
 }
-
 /* All Modules
 ---------------------------------------- */
 .module {
