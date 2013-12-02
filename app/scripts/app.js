@@ -1,11 +1,6 @@
 /*global define */
 define([], function () {
   $(function(){
-<<<<<<< HEAD
-	  $('.hero').css({'height':(($(window).height())-240)+'px'});
-		$(window).resize(function(){
-	  	$('.hero').css({'height':(($(window).height())-240)+'px'});
-=======
 	  $('.hero, .video iframe').css({'height':(($(window).height())-240)+'px'});
 		$(window).resize(function(){
 	  	$('.hero, .video iframe').css({'height':(($(window).height())-240)+'px'});
@@ -21,7 +16,6 @@ define([], function () {
 		  $('.state-two, .close').fadeOut('fast');
 		  $('.branding').css( "background", "transparent" );
 		  $('.hero').removeClass('playing');
->>>>>>> 900158c442f45dff74dc84988e719c5b50c4284e
 		});
 	});
 });

@@ -95,11 +95,7 @@ a {
   background-size: cover;
   .branding {
 		padding-top: 2.0em;
-<<<<<<< HEAD
-		a {
-=======
 		li a {
->>>>>>> 900158c442f45dff74dc84988e719c5b50c4284e
 			color: #FFF;
 			&:hover {
 				background: transparent !important;
@@ -113,8 +109,6 @@ a {
 			font-size: 1.5em;
 		}
 	}
-<<<<<<< HEAD
-=======
 	.close {
 		display: none;
 		position: absolute;
@@ -131,7 +125,6 @@ a {
 			opacity: 1.0;
 		}
 	}
->>>>>>> 900158c442f45dff74dc84988e719c5b50c4284e
 	.hero {
 	  display: table-cell;
 		vertical-align: middle;
