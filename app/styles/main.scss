@@ -42,6 +42,13 @@ $grey: #7f8080;
   -o-transition: all 500ms ease;
 	transition: all 500ms ease;
 }
+.player {
+opacity: 1;
+-webkit-transition: none;
+-moz-transition: none;
+-o-transition: none;
+transition: none;
+}
 /* Typography
 ---------------------------------------- */
 body {
@@ -87,6 +94,7 @@ a {
 }
 /* Header
 ---------------------------------------- */
+
 .header {
 	background: url('../images/header.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -126,8 +134,9 @@ a {
 		}
 	}
 	.hero {
-	  display: table-cell;
+		  display: table-cell;
 		vertical-align: middle;
+		height:400px;
 		margin: 0;
 		width: 100%;
 		text-align: center;
@@ -272,7 +281,7 @@ a {
 		border-color: $grey;
 		&:last-child {
 			border: none;
-			
+
 		}
 	}
 	.description {
