@@ -1,11 +1,7 @@
 /*global define */
 define([], function () {
-	// Preloader
-	$(window).load(function() {
-    $('#status').fadeOut();
-    $('#preloader').delay(350).fadeOut(); 
-    $('body').delay(350).css({'overflow':'visible'});
-  })
+	var player = $("#player");
+  froogaloop = $f(player[0].id);
   // Vimeo embed show, hide, and sizing.
   $(function(){
 	  $('.hero, .video iframe').css({'height':(($(window).height())-240)+'px'});
@@ -17,12 +13,16 @@ define([], function () {
 		  $('.state-two, .close').fadeIn();
 		  $('.branding').css( "background", "#000" );
 		  $('.hero').addClass('playing');
+		  // Start dat video
+		  froogaloop.api('play');
 		});
 		$( ".close" ).click(function() {
 			$('.state-one').fadeIn();
 		  $('.state-two, .close').fadeOut('slow');
 		  $('.branding').css( "background", "transparent" );
-		  $('.hero').delay(350).removeClass('playing');
+		  $('.hero').removeClass('playing');
+		  // Stop dat video
+		  froogaloop.api('pause');
 		});
 	});
 });

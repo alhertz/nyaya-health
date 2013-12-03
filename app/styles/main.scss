@@ -43,11 +43,11 @@ $grey: #7f8080;
 	transition: all 500ms ease;
 }
 .player {
-opacity: 1;
--webkit-transition: none;
--moz-transition: none;
--o-transition: none;
-transition: none;
+	opacity: 1;
+	-webkit-transition: none;
+	-moz-transition: none;
+	-o-transition: none;
+	transition: none;
 }
 /* Typography
 ---------------------------------------- */
@@ -93,33 +93,6 @@ a {
 	}
 }
 
-body {
-    overflow: hidden;
-}
-
-/* Preloader
----------------------------------------- */
-#preloader {
-  position:fixed;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  background-color:#fff; /* change if the mask should have another color then white */
-  z-index:99; /* makes sure it stays on top */
-}
-
-#status {
-	font-size: 72px;
-	text-align: center;
-	color: $pink;
-  width:100px;
-  height:100px;
-  position:absolute;
-  left:50%;
-  top:50%;
-  margin:-50px 0 0 -50px; /* is width and height divided by two */
-}
 /* Header
 ---------------------------------------- */
 

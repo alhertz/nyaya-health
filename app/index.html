@@ -29,9 +29,6 @@
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div id="preloader">
-      <div id="status"><i class="fa fa-refresh fa-spin"></i></div>
-    </div>
     <!--Begin Header-->
     <header class="header">
       <section class="branding">
@@ -54,9 +51,8 @@
         </div>
         <div class="state-two">
           <section class="video">
-            <iframe src="//player.vimeo.com/video/80769393?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="100%" height="233" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+            <iframe id="player" src="//player.vimeo.com/video/80769393?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="100%" height="233" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
           </section>
-
         </div>
       </section>
       <section class="callout">
@@ -236,6 +232,7 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/jquery.js"></script>
+    <script src="scripts/froogaloop.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
